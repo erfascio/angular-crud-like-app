@@ -49,8 +49,8 @@ export class AppComponent {
     if(index == this.currentUserIndex) {
       this.currentAction = "add";
     }
-    const temp: User[] = [...this.users.slice(0, index), ...this.users.slice(index+1)];
-    this.users = temp;
+    this.users = [...this.users.slice(0, index), ...this.users.slice(index+1)];
+    //this.users = this.users.splice(index, 1);
     this.updateLocalStorage();
   }
 
