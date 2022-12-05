@@ -36,6 +36,7 @@ export class AppComponent {
     this.currentAction = "udpate";
     this.currentUserIndex = this.users.length-1;
     this.updateLocalStorage();
+    this.clear();
   }
 
   update() {
