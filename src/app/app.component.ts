@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { UserViewComponent } from './user-view/user-view.component';
 import { User } from 'src/interface/User';
-import { handler } from "src/utils/SessionStorageManager";
+import { handler } from "src/utils/StorageManager";
 
 @Component({
   selector: 'app-root',
