@@ -1,0 +1,28 @@
+<div class="container col-sm-12">
+			
+    <div class="form-group">
+        <label for="Label" class="col-sm-2">ID</label>
+        <span>{{detail?.id}}</span>
+    </div>
+
+    <div class="form-group">
+        <label for="Label" class="col-sm-2">Username</label>
+        <span>{{detail?.username}}</span>
+    </div>
+
+    <div class="form-group">
+        <label for="Label" class="col-sm-2">Data Nascita</label>
+        <span>{{detail?.bornDate | date:'dd/MM/yyyy'}}</span>
+    </div>
+
+    <div class="form-group">
+        <label for="Label" class="col-sm-2">Ultimo Accesso</label>
+        <span>{{detail?.lastLoginTime | date:'dd/MM/yyyy HH:mm:ss'}}</span>
+    </div>
+
+    <div class="form-group">
+        <label for="Label" class="col-sm-2">Ruoli</label>
+        <span>{{detail?.roles}}</span>
+    </div>
+
+</div>
